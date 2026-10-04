@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Iris Flower</title>
+</head>
+    <body bgcolor="#FFCC99">
+
+   <table border="2" align="center" width="550">
+   <tr>
+   <td>
+        <h1 align="center" style="color:green;"> <u>IRIS FLOWER DETECTION </u></h1><br>
+        
+        <form method="POST", action="{{url_for('predict')}}">
+		<fieldset>
+		<legend align="right"> <b>Input Features:</b></legend>
+		<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+           <b> First Value : &nbsp;&nbsp;&nbsp; <input type="text", name='a', placeholder="enter sepal length" style="border-radius:5px;"> <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Second Value :  <input type="text", name='b', placeholder="enter sepal width" style="border-radius:5px;"> <br><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            Third Value :  &nbsp;&nbsp;<input type="text", name='c', placeholder="enter petal length" style="border-radius:5px;"> <br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;
+            Fourth Value : <input type="text", name='d', placeholder="enter petal width" style="border-radius:5px;"> <br><br><br></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Predict!" style="color:red; text-align:center; font-weight:bold; border-radius:5px;">
+			</fieldset>
+        </form>
+        <p align="center">
+        <img src='static\flower1.jpg' alt="flower" border="2" style="border-radius:20px; border-color:red; border-style:groove;">
+		</p>
+    </td>
+	</tr>
+	</table>
+
+    </body>
+</html>
